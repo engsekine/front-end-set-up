@@ -1,0 +1,62 @@
+{
+    "name": "front-end-set-up",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 3000",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prettier": "prettier --write .",
+        "storybook": "storybook dev -p 6006",
+        "storybook:build": "storybook build",
+        "storybook:start": "http-server -s -p 9001 storybook-static",
+        "storybook:test": "test-storybook --url http://localhost:9001 --coverage",
+        "test": "npm run storybook:build && npm-run-all -p -r storybook:start storybook:test"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "next": "^13.3.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tslib": "^2.5.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.8",
+        "@storybook/addon-coverage": "^0.0.8",
+        "@storybook/addon-essentials": "^7.0.8",
+        "@storybook/addon-interactions": "^7.0.8",
+        "@storybook/addon-links": "^7.0.8",
+        "@storybook/blocks": "^7.0.8",
+        "@storybook/jest": "^0.1.0",
+        "@storybook/nextjs": "^7.0.8",
+        "@storybook/react": "^7.0.8",
+        "@storybook/test-runner": "^0.10.0",
+        "@storybook/testing-library": "^0.1.0",
+        "@types/node": "18.14.1",
+        "@types/react": "^18.2.5",
+        "@types/react-dom": "18.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.59.2",
+        "@typescript-eslint/parser": "^5.59.2",
+        "eslint": "^8.39.0",
+        "eslint-config-next": "^13.3.4",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "http-server": "^14.1.1",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.23",
+        "prettier": "^2.8.8",
+        "sass": "^1.62.1",
+        "storybook": "^7.0.8",
+        "typescript": "^5.0.4"
+    },
+    "volta": {
+        "node": "16.20.0",
+        "npm": "9.6.6"
+    }
+}

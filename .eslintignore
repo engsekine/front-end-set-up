@@ -1,0 +1,12 @@
+# config
+.eslintrc
+.prettierrc
+next.config.js
+tsconfig.json
+
+# build dir
+build/
+bin/
+obj/
+out/
+.next/

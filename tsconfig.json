@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "lib": ["dom", "dom.iterable", "esnext", "ES2015"],
+        "module": "esnext",
+        "baseUrl": ".",
+        "allowJs": false,
+        "checkJs": false,
+        "jsx": "preserve",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "incremental": true,
+        "tsBuildInfoFile": "./dist/.diff",
+        "removeComments": false,
+        "noEmit": false,
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "useUnknownInCatchVariables": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noUncheckedIndexedAccess": true,
+        "isolatedModules": true,
+        "moduleResolution": "node16",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@/components/*": ["./src/components/*"]
+        },
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "typeRoots": ["./node_modules/@types", "./src/types"]
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/*.ts", ".next/types/**/*.ts"],
+    "exclude": ["node_modules"]
+}

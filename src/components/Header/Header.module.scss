@@ -1,0 +1,16 @@
+.header {
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    @media screen and (max-width: 1024px) {
+        padding: 20px 2%;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        @media screen and (max-width: 1024px) {
+            font-size: 4vw;
+        }
+    }
+}
