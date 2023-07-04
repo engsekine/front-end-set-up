@@ -10,13 +10,13 @@
 
 `$ cp .env.sample .env.local`
 
-### 3. yarn 起動
+### 3. npm ビルド
 
-`$ yarn && yarn build`
+`$ npm install && npm run build`
 
 ### 4. デベロッパーモード起動
 
-`$ yarn dev`
+`$ npm run dev`
 
 ### 5. ローカルホスト起動
 
@@ -25,13 +25,21 @@ http://localhost:3000/
 ## コマンド
 
 ビルド
-`$ yarn build`
+`$ npm run build`
 デベロッパーモード起動
-`$ yarn dev`
+`$ npm run dev`
 本番環境起動
-`$ yarn start`
+`$ npm run start`
 lint 起動
-`$ yarn lint`
+`$ npm run lint`
+
+
+## docker
+ビルド
+`$ docker-compose build --no-cache`
+デベロッパーモード起動
+`$ docker-compose up -d`
+http://localhost:3000/
 
 ## ルール
 
