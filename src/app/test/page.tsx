@@ -29,7 +29,6 @@ export const metadata: Metadata = {
         creator: '@creator',
         images: 'https://example.com/og.png'
     },
-    metadataBase: new URL('https://example.com'),
     alternates: {
         canonical: '/test'
     }

@@ -5,16 +5,13 @@ interface Meta {
     imageType: string;
     imageWidth: string;
     imageHeight: string;
-    ogType: string;
     siteUrl: string;
-    noIndexNoFollow: string;
 }
 
 interface DefaultMeta extends Meta {
-    iconUrl?: string;
-    ogLocale?: string;
-    formatDetection?: string;
-    twitterCard?: string;
-    twitterSite?: string;
+    iconUrl: string;
+    ogLocale: string;
+    twitterSite: string;
+    twitterCreater: string;
     fbAppId?: string;
 }
