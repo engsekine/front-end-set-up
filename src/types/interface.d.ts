@@ -9,3 +9,12 @@ interface Meta {
     siteUrl: string;
     noIndexNoFollow: string;
 }
+
+interface DefaultMeta extends Meta {
+    iconUrl?: string;
+    ogLocale?: string;
+    formatDetection?: string;
+    twitterCard?: string;
+    twitterSite?: string;
+    fbAppId?: string;
+}
