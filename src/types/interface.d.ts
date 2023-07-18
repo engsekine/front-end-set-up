@@ -7,5 +7,5 @@ interface Meta {
     imageHeight: string;
     ogType: string;
     siteUrl: string;
-    robots: string;
+    noIndexNoFollow: string;
 }

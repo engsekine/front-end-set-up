@@ -10,7 +10,7 @@ export function Meta({
     imageHeight,
     ogType,
     siteUrl,
-    robots
+    noIndexNoFollow
 }: Meta) {
     return (
         <>
@@ -89,7 +89,7 @@ export function Meta({
             />
             <meta
                 name='robots'
-                content={robots}
+                content={noIndexNoFollow}
             />
             <link
                 rel='canonical'

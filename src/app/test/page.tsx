@@ -13,7 +13,7 @@ export default function Test() {
                 imageHeight={'a'}
                 ogType={'a'}
                 siteUrl={''}
-                robots={'a'}
+                noIndexNoFollow={'noindex, nofollow'}
             />
             <main></main>
         </>
