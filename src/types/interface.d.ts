@@ -1,3 +1,8 @@
+interface Config {
+    siteName: string;
+    siteUrl: string;
+}
+
 interface Meta {
     title: string;
     description: string;
@@ -8,10 +13,13 @@ interface Meta {
     siteUrl: string;
 }
 
-interface DefaultMeta extends Meta {
-    iconUrl: string;
+interface HomeMeta extends Meta {
     ogLocale: string;
     twitterSite: string;
     twitterCreater: string;
-    fbAppId?: string;
+    iconUrl: string;
+}
+
+interface DefaultMeta {
+    iconUrl: string;
 }

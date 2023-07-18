@@ -1,5 +1,3 @@
-export { HomeMeta } from './meta/home';
-
-export const siteInfo = {
-    siteName: 'a' as string
-};
+export { defaultMeta } from './meta/index';
+export { homeMeta, homeMetaArg } from './meta/home';
+export { config } from './config';
