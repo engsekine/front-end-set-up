@@ -4,11 +4,6 @@ import { Inter } from 'next/font/google';
 import '@/styles/style.scss';
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-    title: 'sekine frontend',
-    description: 'sekine frontend'
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html

@@ -4,7 +4,17 @@ import { Meta } from '@/components/index';
 export default function Test() {
     return (
         <>
-            <Meta />
+            <Meta
+                title={'a'}
+                description={'a'}
+                imageUrl={'a'}
+                imageType={'a'}
+                imageWidth={'a'}
+                imageHeight={'a'}
+                ogType={'a'}
+                siteUrl={''}
+                robots={'a'}
+            />
             <main></main>
         </>
     );

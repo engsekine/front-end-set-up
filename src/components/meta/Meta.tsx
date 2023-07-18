@@ -1,39 +1,103 @@
 import React from 'react';
-import { MetaConfig } from '../../config/index';
-export function Meta() {
+import { siteInfo, DefaultMetaConfig } from '../../config/index';
+
+export function Meta({
+    title,
+    description,
+    imageUrl,
+    imageType,
+    imageWidth,
+    imageHeight,
+    ogType,
+    siteUrl,
+    robots
+}: Meta) {
     return (
         <>
+            <title>{title}</title>
+            <meta
+                name='description'
+                content={description}
+            />
+            <meta
+                property='og:title'
+                content={title}
+            />
+            <meta
+                property='og:description'
+                content={description}
+            />
             <meta
                 property='og:locale'
-                content={MetaConfig.ogLocale}
+                content={DefaultMetaConfig.ogLocale}
+            />
+            <meta
+                property='og:type'
+                content={ogType}
+            />
+            <meta
+                property='og:url'
+                content={siteUrl}
+            />
+            <meta
+                property='og:site_name'
+                content={siteInfo.siteName}
+            />
+            <meta
+                property='og:image'
+                content={imageUrl}
+            />
+            <meta
+                property='og:image:type'
+                content={imageType}
             />
             <meta
                 property='og:image:width'
-                content={MetaConfig.ogImageWidth}
+                content={imageWidth}
             />
             <meta
                 property='og:image:height'
-                content={MetaConfig.ogImageHeight}
-            />
-            <meta
-                name='format-detection'
-                content={MetaConfig.formatDetection}
-            />
-            <meta
-                name='robots'
-                content={MetaConfig.robots}
+                content={imageHeight}
             />
             <meta
                 name='twitter:card'
-                content={MetaConfig.twitterCard}
+                content={DefaultMetaConfig.twitterCard}
             />
             <meta
                 name='twitter:site'
-                content={MetaConfig.twitterSite}
+                content={DefaultMetaConfig.twitterSite}
+            />
+            <meta
+                name='twitter:title'
+                content={title}
+            />
+            <meta
+                name='twitter:description'
+                content={description}
+            />
+            <meta
+                name='twitter:image'
+                content={imageUrl}
             />
             <meta
                 property='fb:app_id'
-                content={MetaConfig.fbAppId}
+                content={DefaultMetaConfig.fbAppId}
+            />
+            <meta
+                name='format-detection'
+                content={DefaultMetaConfig.formatDetection}
+            />
+            <meta
+                name='robots'
+                content={robots}
+            />
+            <link
+                rel='canonical'
+                href={siteUrl}
+            />
+            <link
+                rel='icon'
+                href={DefaultMetaConfig.iconUrl}
             />
         </>
     );
