@@ -11,7 +11,7 @@ export function Meta({
     ogType,
     siteUrl,
     noIndexNoFollow
-}: Meta) {
+}: Meta): JSX.Element {
     return (
         <>
             <title>{title}</title>
@@ -94,10 +94,6 @@ export function Meta({
             <link
                 rel='canonical'
                 href={siteUrl}
-            />
-            <link
-                rel='icon'
-                href={DefaultMetaConfig.iconUrl}
             />
         </>
     );

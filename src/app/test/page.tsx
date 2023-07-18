@@ -1,21 +1,42 @@
-'use client';
 import React from 'react';
-import { Meta } from '@/components/index';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: 'About',
+    description: 'サイトの説明',
+    keywords: '',
+    openGraph: {
+        title: 'サイトのタイトル2',
+        description: 'サイトの説明',
+        url: 'https://example.com',
+        siteName: 'サイトのタイトル',
+        images: [
+            {
+                url: 'https://example.com/og.png',
+                width: 800,
+                height: 600,
+                type: 'image/png'
+            }
+        ],
+        locale: 'ja_JP',
+        type: 'article'
+    },
+    twitter: {
+        title: 'サイトのタイトル',
+        description: 'サイトの説明',
+        card: 'summary_large_image',
+        site: '@site',
+        creator: '@creator',
+        images: 'https://example.com/og.png'
+    },
+    metadataBase: new URL('https://example.com'),
+    alternates: {
+        canonical: '/test'
+    }
+};
 export default function Test() {
     return (
         <>
-            <Meta
-                title={'string'}
-                description={'a'}
-                imageUrl={'a'}
-                imageType={'a'}
-                imageWidth={'1200'}
-                imageHeight={'630'}
-                ogType={'a'}
-                siteUrl={''}
-                noIndexNoFollow={'noindex, nofollow'}
-            />
             <main></main>
         </>
     );
