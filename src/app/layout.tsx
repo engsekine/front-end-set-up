@@ -1,11 +1,12 @@
 import React from 'react';
 import { Header, Footer } from '@/components/index';
-import { homeMetaArg } from '@/config';
 import { Inter } from 'next/font/google';
 import '@/styles/style.scss';
+import { metaArg } from '@/app/index';
+
+export const metadata = metaArg;
 
 const inter = Inter({ subsets: ['latin'] });
-export const metadata = homeMetaArg;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (

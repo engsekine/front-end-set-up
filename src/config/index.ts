@@ -1,3 +1,6 @@
-export { defaultMeta } from './meta/index';
-export { homeMeta, homeMetaArg } from './meta/home';
-export { config } from './config';
+export const config: Config = {
+    siteName: 'test',
+    siteUrl: 'http://localhost:3000',
+    twitterSite: 'string',
+    twitterCreater: 'string'
+};
