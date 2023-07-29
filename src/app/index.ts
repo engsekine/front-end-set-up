@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { config } from '@/config';
 
 const siteData: HomeMeta = {
-    title: 'string',
+    title: config.siteName,
     description: 'string',
     imageUrl: 'http://localhost:3000/favicon.ico',
     imageType: 'image/png',
